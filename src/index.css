@@ -1,0 +1,52 @@
+:root {
+  --bg: #f5efe2;
+  --bg-accent: #f9f4ea;
+  --panel: rgba(255, 252, 246, 0.8);
+  --text-strong: #2f2418;
+  --text-soft: #6d5a42;
+  --accent-strong: #bf5f2d;
+  --border-soft: rgba(82, 64, 43, 0.12);
+  --shadow-soft: 0 24px 60px -40px rgba(45, 35, 24, 0.6);
+  --sans: 'Segoe UI', 'Avenir Next', 'Helvetica Neue', sans-serif;
+
+  font: 16px/1.5 var(--sans);
+  color: var(--text-strong);
+  background:
+    radial-gradient(circle at top left, rgba(255, 209, 102, 0.45), transparent 28%),
+    radial-gradient(circle at top right, rgba(78, 205, 196, 0.22), transparent 22%),
+    linear-gradient(180deg, #fcf8ef, var(--bg));
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  min-height: 100svh;
+}
+
+h1 {
+  margin: 0 0 12px;
+  font-size: clamp(2.4rem, 4vw, 4.6rem);
+  line-height: 0.98;
+  letter-spacing: -0.06em;
+  color: var(--text-strong);
+}
+
+p {
+  margin: 0;
+}

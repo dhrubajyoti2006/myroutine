@@ -1,0 +1,319 @@
+.app-shell {
+  padding: 28px 24px 32px;
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 280px;
+  gap: 18px;
+  align-items: start;
+}
+
+.legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.66);
+  border: 1px solid rgba(53, 41, 29, 0.08);
+  backdrop-filter: blur(8px);
+}
+
+.legend-swatch {
+  width: 12px;
+  height: 12px;
+  border-radius: 999px;
+  border: 2px solid transparent;
+}
+
+.calendar-card {
+  padding: 12px;
+  border-radius: 24px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.8), rgba(246, 240, 228, 0.88)),
+    rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(53, 41, 29, 0.08);
+  box-shadow: 0 30px 60px -40px rgba(49, 37, 24, 0.7);
+}
+
+.notes-card {
+  padding: 18px 18px 20px;
+  border-radius: 24px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.88), rgba(249, 242, 228, 0.95)),
+    rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(53, 41, 29, 0.08);
+  box-shadow: 0 30px 60px -40px rgba(49, 37, 24, 0.55);
+}
+
+.notes-section + .notes-section {
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(99, 81, 58, 0.12);
+}
+
+.notes-section h2 {
+  margin: 0 0 10px;
+  font-size: 0.92rem;
+  line-height: 1.3;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-strong);
+}
+
+.notes-list {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--text-soft);
+}
+
+.notes-list li + li {
+  margin-top: 10px;
+}
+
+.notes-list li {
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.weekly-plan {
+  margin-top: 28px;
+  padding: 24px;
+  border-radius: 24px;
+  background: rgba(247, 249, 252, 0.78);
+  border: 1px solid rgba(53, 41, 29, 0.08);
+  box-shadow: 0 22px 50px -40px rgba(49, 37, 24, 0.55);
+}
+
+.weekly-plan h1,
+.weekly-plan h2,
+.weekly-plan h3 {
+  margin-top: 0;
+  color: #124864;
+}
+
+.weekly-plan h1 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+.weekly-plan__intro {
+  margin-bottom: 24px;
+  color: #445468;
+}
+
+.plan-day-card,
+.plan-notes-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 18px 20px;
+  margin-bottom: 18px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  border-left: 6px solid #2cb6d3;
+}
+
+.plan-day-card h2 {
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.plan-list {
+  margin: 8px 0 0 20px;
+  padding: 0;
+}
+
+.plan-list li {
+  margin-bottom: 8px;
+  color: #1f2937;
+}
+
+.plan-section-title {
+  margin-top: 30px;
+  margin-bottom: 14px;
+}
+
+.plan-small-note {
+  color: #4b5563;
+  font-size: 14px;
+}
+
+.plan-highlight {
+  font-weight: 700;
+  color: #0f4c5c;
+}
+
+.plan-time {
+  font-weight: 700;
+  color: #111827;
+}
+
+.rbc-calendar {
+  height: 100%;
+  min-height: 620px;
+  color: var(--text-strong);
+}
+
+.rbc-time-view,
+.rbc-month-view,
+.rbc-agenda-view {
+  border: none;
+}
+
+.rbc-time-header,
+.rbc-time-content {
+  border-color: rgba(99, 81, 58, 0.14);
+}
+
+.rbc-allday-cell {
+  display: none;
+}
+
+.rbc-header {
+  padding: 10px 6px;
+  border-bottom: 1px solid rgba(99, 81, 58, 0.14);
+  font-size: 0.84rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-soft);
+  background: rgba(255, 251, 244, 0.86);
+}
+
+.rbc-time-gutter .rbc-timeslot-group,
+.rbc-timeslot-group {
+  border-bottom-color: rgba(99, 81, 58, 0.08);
+}
+
+.rbc-time-slot {
+  color: rgba(88, 70, 49, 0.72);
+}
+
+.rbc-label {
+  padding-right: 10px;
+  font-size: 0.76rem;
+}
+
+.rbc-day-slot .rbc-time-slot {
+  border-top-color: rgba(99, 81, 58, 0.05);
+}
+
+.rbc-day-bg + .rbc-day-bg,
+.rbc-time-header-content .rbc-header + .rbc-header,
+.rbc-time-content > * + * > * {
+  border-left-color: rgba(99, 81, 58, 0.1);
+}
+
+.rbc-today {
+  background: rgba(255, 214, 102, 0.08);
+}
+
+.rbc-event {
+  padding: 0;
+  border-radius: 10px;
+  border-width: 1px;
+  border-style: solid;
+  overflow: visible;
+}
+
+.rbc-event-content {
+  height: 100%;
+}
+
+.rbc-event-label {
+  font-size: 0.65rem;
+  opacity: 0.72;
+  margin-bottom: 2px;
+}
+
+.event-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 100%;
+  padding: 4px 6px;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+  font: inherit;
+}
+
+.event-card__title {
+  display: block;
+  font-size: 0.74rem;
+  font-weight: 800;
+  line-height: 1.15;
+  text-wrap: balance;
+}
+
+.event-tooltip {
+  position: absolute;
+  left: 0;
+  top: calc(100% + 6px);
+  z-index: 30;
+  display: grid;
+  gap: 3px;
+  min-width: 180px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: #ffffff;
+  border: 1px solid rgba(53, 41, 29, 0.12);
+  box-shadow: 0 18px 32px -18px rgba(35, 27, 18, 0.4);
+  color: #2f2418;
+  white-space: nowrap;
+}
+
+.event-tooltip strong {
+  font-size: 0.82rem;
+  line-height: 1.2;
+}
+
+.event-tooltip span {
+  font-size: 0.74rem;
+  line-height: 1.3;
+}
+
+.rbc-current-time-indicator {
+  background-color: #ef476f;
+}
+
+@media (max-width: 920px) {
+  .app-shell {
+    padding: 20px 10px 24px;
+  }
+
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .calendar-card {
+    padding: 10px;
+    border-radius: 20px;
+    overflow-x: auto;
+  }
+
+  .notes-card {
+    border-radius: 20px;
+  }
+
+  .weekly-plan {
+    padding: 18px 14px;
+    border-radius: 20px;
+  }
+
+  .rbc-calendar {
+    min-width: 760px;
+    height: 620px;
+    min-height: 620px;
+  }
+}
